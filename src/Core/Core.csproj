@@ -20,7 +20,8 @@
         <Copyright>Go-Logs 2020</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <CodeAnalysisRuleSet>Go-Logs.ruleset</CodeAnalysisRuleSet>
+        <CodeAnalysisRuleSet>GoLogs.stylecop.ruleset</CodeAnalysisRuleSet>
+        <NuspecFile>GoLogs.Framework.Core.nuspec</NuspecFile>
     </PropertyGroup>
 
     <ItemGroup>
