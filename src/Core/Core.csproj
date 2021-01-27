@@ -19,6 +19,7 @@
         <Description>Core framework for Go-Logs .NET applications.</Description>
         <Copyright>Go-Logs 2020</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <CodeAnalysisRuleSet>Go-Logs.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
