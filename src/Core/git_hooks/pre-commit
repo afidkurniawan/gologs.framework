@@ -1,0 +1,39 @@
+#!/bin/sh
+LC_ALL=C
+
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+echo "------------------------------------------------------------------------------------------------------------------------"
+
+# Select files to format
+FILES=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$FILES" ] && exit 0
+
+# Format all selected files
+echo "$FILES" | cat | xargs | sed -e 's/ /,/g' | xargs dotnet format -wsa warn --include
+
+RETVAL=$?
+if [[ $RETVAL -ne 0 ]]; then
+  echo "${RED}Commit aborted."
+  exit 1
+fi
+
+# Add back the modified files to staging
+echo "$FILES" | xargs git add
+
+# Re-select files to check for modifications
+FILES=$(git diff --cached --name-only --diff-filter=ACMR)
+if [ -z "$FILES" ]; then
+  echo "Nothing to commit. No changes to staged file(s) after formatting."
+  exit 1
+fi
+
+echo "------------------------------------------------------------------------------------------------------------------------"
+
+if ! dotnet build /p:StyleCopEnabled=true /warnaserror; then
+  echo "${RED}Build failed. Commit aborted."
+  exit 1
+fi
+
+exit 0

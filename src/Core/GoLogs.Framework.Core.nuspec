@@ -20,6 +20,8 @@
     <file src="stylecop.json" />
     <file src="GoLogs.stylecop.ruleset" />
     <file src="GoLogs.Framework.Core.props" target="build" />
+    <file src="GoLogs.Framework.Core.targets" target="build" />
+    <file src="git_hooks/*" target="restore/git_hooks" />
     <file src="bin/Release/netcoreapp3.1/*.dll" target="lib/netcoreapp3.1" />
     <file src="bin/Release/netcoreapp3.1/*.pdb" target="lib/netcoreapp3.1" />
     <file src="bin/Release/*.snupkg" />
