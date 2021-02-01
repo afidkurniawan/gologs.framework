@@ -9,6 +9,8 @@ namespace GoLogs.Framework.Mvc
         
         ERROR_DATA_INVALID,
         
+        ERROR_DATA_ONLY_ALPHANUM_ALLOWED,
+        
         ERROR_MULTIPLE
     }
 }

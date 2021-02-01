@@ -8,16 +8,16 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <IsPackable>true</IsPackable>
         <PackageId>GoLogs.Framework.Mvc</PackageId>
-        <PackageVersion>0.1.0</PackageVersion>
+        <PackageVersion>0.2.0</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <Authors>IqbalN</Authors>
         <Company>PT. Gologs Aplikasi Indonesia</Company>
-        <AssemblyVersion>0.1.0</AssemblyVersion>
-        <FileVersion>0.1.0</FileVersion>
+        <AssemblyVersion>0.2.0</AssemblyVersion>
+        <FileVersion>0.2.0</FileVersion>
         <Description>Framework for Go-Logs .NET MVC applications.</Description>
-        <Copyright>Go-Logs 2020</Copyright>
+        <Copyright>Go-Logs 2021</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
     </PropertyGroup>
 

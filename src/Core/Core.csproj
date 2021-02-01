@@ -8,21 +8,32 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <IsPackable>true</IsPackable>
         <PackageId>GoLogs.Framework.Core</PackageId>
-        <PackageVersion>0.2.0</PackageVersion>
+        <PackageVersion>0.3.0</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <Authors>IqbalN</Authors>
         <Company>PT. Gologs Aplikasi Indonesia</Company>
-        <AssemblyVersion>0.2.0</AssemblyVersion>
-        <FileVersion>0.2.0</FileVersion>
+        <AssemblyVersion>0.3.0</AssemblyVersion>
+        <FileVersion>0.3.0</FileVersion>
         <Description>Core framework for Go-Logs .NET applications.</Description>
         <Copyright>Go-Logs 2020</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <CodeAnalysisRuleSet>GoLogs.stylecop.ruleset</CodeAnalysisRuleSet>
+        <NuspecFile>GoLogs.Framework.Core.nuspec</NuspecFile>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+      <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <AdditionalFiles Include="stylecop.json" />
+    </ItemGroup>
+    
 </Project>

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "Go-Logs",
+      "copyrightText": "-------------------------------------------------------------\nCopyright {companyName}. All rights reserved.\nProprietary and confidential.\nUnauthorized copying of this file is strictly prohibited.\n-------------------------------------------------------------",
+      "xmlHeader": false
+    },
+    "layoutRules": {
+      "newlineAtEndOfFile": "require"
+    },
+    "maintainabilityRules": {
+      "topLevelTypes": ["class", "interface", "struct", "enum"]
+    },
+    "orderingRules": {
+      "blankLinesBetweenUsingGroups": "omit",
+      "usingDirectivesPlacement": "outsideNamespace"
+    }
+  }
+}
